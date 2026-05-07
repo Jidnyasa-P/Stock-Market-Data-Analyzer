@@ -1,0 +1,6 @@
+{
+  "name": "Stock Analyst Pro",
+  "description": "A comprehensive stock market analyzer with technical indicators, strategy backtesting, and interactive visualizations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["Finance", "Data Visualization", "Backtesting"]
+}

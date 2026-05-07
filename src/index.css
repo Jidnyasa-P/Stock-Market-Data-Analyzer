@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-editorial-bg: #F4F1EE;
+  --color-editorial-text: #1A1A1A;
+  --color-editorial-accent: #C2410C;
+  --color-editorial-border: rgba(26, 26, 26, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-editorial-bg text-editorial-text antialiased font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.editorial-divider {
+  @apply border-b border-editorial-border;
+}
+
+.editorial-card {
+  @apply bg-white border border-black/5 shadow-sm rounded-sm p-6;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.tracking-widest-plus {
+  letter-spacing: 0.3em;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
